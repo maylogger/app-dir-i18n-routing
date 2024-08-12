@@ -13,11 +13,16 @@ export default async function IndexPage({
   return (
     <div>
       <LocaleSwitcher />
-      <p>{dictionary.welcome}</p>
-      <h1 className="text-2xl">{dictionary.title.heading}</h1>
+      <p className="text-slate-500 text-xs mt-4">{dictionary.welcome}</p>
+      <h1 className="text-2xl font-semibold text-blue-400">
+        {dictionary.title.heading}
+      </h1>
       <p>{dictionary.title.subtitle}</p>
-      <p>
-        {dictionary.currentlocale} {lang}
+      <p className="text-slate-500 text-xs mt-4">
+        {dictionary.currentlocale}{" "}
+        <span className="bg-slate-300 rounded-full p-0.5 px-2 text-slate-500">
+          {dictionary.lang}
+        </span>
       </p>
     </div>
   );

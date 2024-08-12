@@ -1,11 +1,6 @@
 import "./global.css";
 import { i18n, type Locale } from "../../i18n-config";
-import {
-  Edu_VIC_WA_NT_Beginner,
-  Inter,
-  Noto_Sans_TC,
-  Roboto,
-} from "next/font/google";
+import { Edu_VIC_WA_NT_Beginner, Inter, Noto_Sans_TC } from "next/font/google";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -14,15 +9,14 @@ const inter = Inter({
 });
 
 const enFont = Edu_VIC_WA_NT_Beginner({
-  weight: ["600"],
+  weight: ["400", "600"],
   subsets: ["latin"],
   display: "swap",
   variable: "--font-en",
 });
 
 const noto_sans_tc = Noto_Sans_TC({
-  weight: ["400"],
-  style: ["normal"],
+  weight: ["400", "600"],
   subsets: ["cyrillic"],
   display: "swap",
   variable: "--font-noto-sans-tc",
@@ -46,7 +40,7 @@ export default function Root({
       ${params.lang === "zh-TW" ? "font-sans-tw" : "font-sans"}
       `}
     >
-      <body className="p-10">{children}</body>
+      <body className="p-10 bg-slate-800 text-white">{children}</body>
     </html>
   );
 }

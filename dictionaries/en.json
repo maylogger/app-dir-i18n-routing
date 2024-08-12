@@ -6,11 +6,8 @@
     "decrement": "Decrement"
   },
   "title": {
-    "heading": "Times New Roman",
+    "heading": "Times New Roman🖋️",
     "subtitle": "It's time to goto bed"
   },
-  "lang": {
-    "zh-TW": "繁體中文",
-    "en": "English"
-  }
+  "lang": "English"
 }

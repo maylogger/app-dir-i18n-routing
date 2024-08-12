@@ -1,0 +1,13 @@
+{
+  "server-component": {
+    "welcome": "歡迎"
+  },
+  "counter": {
+    "increment": "增加",
+    "decrement": "減少"
+  },
+  "title": {
+    "heading": "台式牛肉麵",
+    "subtitle": "這時間該睡覺了"
+  }
+}

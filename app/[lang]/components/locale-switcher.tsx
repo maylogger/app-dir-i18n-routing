@@ -14,13 +14,18 @@ export default function LocaleSwitcher() {
   };
 
   return (
-    <div>
+    <div className="text-xs">
       <p>Locale switcher:</p>
-      <ul>
+      <ul className="list-disc">
         {i18n.locales.map((locale) => {
           return (
             <li key={locale}>
-              <Link href={redirectedPathName(locale)}>{locale}</Link>
+              <Link
+                className="text-sky-500 underline"
+                href={redirectedPathName(locale)}
+              >
+                {locale}
+              </Link>
             </li>
           );
         })}

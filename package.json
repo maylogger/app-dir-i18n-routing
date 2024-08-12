@@ -7,11 +7,14 @@
   },
   "dependencies": {
     "@formatjs/intl-localematcher": "0.2.32",
+    "autoprefixer": "^10.4.20",
     "negotiator": "0.6.3",
     "next": "latest",
+    "postcss": "^8.4.41",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "server-only": "0.0.1"
+    "server-only": "0.0.1",
+    "tailwindcss": "^3.4.9"
   },
   "devDependencies": {
     "@types/negotiator": "0.6.1",

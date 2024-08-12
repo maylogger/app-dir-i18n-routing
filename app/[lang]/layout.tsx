@@ -1,4 +1,5 @@
 import { i18n, type Locale } from "../../i18n-config";
+import "./global.css";
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
@@ -13,7 +14,7 @@ export default function Root({
 }) {
   return (
     <html lang={params.lang}>
-      <body>{children}</body>
+      <body className="p-10">{children}</body>
     </html>
   );
 }

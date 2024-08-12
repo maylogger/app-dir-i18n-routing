@@ -13,6 +13,8 @@ export default async function IndexPage({
   return (
     <div>
       <LocaleSwitcher />
+      <h1 className="text-2xl">{dictionary.title.heading}</h1>
+      <p>{dictionary.title.subtitle}</p>
       <p>Current locale: {lang}</p>
       <p>
         This text is rendered on the server:{" "}

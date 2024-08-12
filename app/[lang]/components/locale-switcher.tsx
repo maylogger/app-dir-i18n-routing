@@ -3,9 +3,15 @@
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { i18n, type Locale } from "../../../i18n-config";
+import { type getDictionary } from "../../../get-dictionary";
 
-export default function LocaleSwitcher() {
+export default function LocaleSwitcher({
+  dictionary,
+}: Readonly<{
+  dictionary: Awaited<ReturnType<typeof getDictionary>>["lang"];
+}>) {
   const pathName = usePathname();
+
   const redirectedPathName = (locale: Locale) => {
     if (!pathName) return "/";
     const segments = pathName.split("/");
@@ -20,7 +26,9 @@ export default function LocaleSwitcher() {
         {i18n.locales.map((locale) => {
           return (
             <li key={locale}>
-              <Link href={redirectedPathName(locale)}>{locale}</Link>
+              <Link href={redirectedPathName(locale)}>
+                {dictionary.lang ? dictionary["lang"][`${locale}`] : "Error"}
+              </Link>
             </li>
           );
         })}

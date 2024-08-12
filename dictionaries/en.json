@@ -5,5 +5,10 @@
   "counter": {
     "increment": "Increment",
     "decrement": "Decrement"
+  },
+  "lang": {
+    "en": "English",
+    "de": "Deutsch",
+    "cs": "Český"
   }
 }

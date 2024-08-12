@@ -9,5 +9,9 @@ const dictionaries = {
   cs: () => import("./dictionaries/cs.json").then((module) => module.default),
 };
 
-export const getDictionary = async (locale: Locale) =>
+type MyObjectType = {
+  [key: string]: any;
+};
+
+export const getDictionary = async (locale: Locale): MyObjectType =>
   dictionaries[locale]?.() ?? dictionaries.en();

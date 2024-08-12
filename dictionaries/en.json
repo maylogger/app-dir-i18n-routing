@@ -1,7 +1,6 @@
 {
-  "server-component": {
-    "welcome": "Welcome"
-  },
+  "welcome": "Welcome",
+  "currentlocale": "The current language is",
   "counter": {
     "increment": "Increment",
     "decrement": "Decrement"

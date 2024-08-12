@@ -1,7 +1,6 @@
 {
-  "server-component": {
-    "welcome": "歡迎"
-  },
+  "welcome": "歡迎",
+  "currentlocale": "現在的語言是",
   "counter": {
     "increment": "增加",
     "decrement": "減少"
